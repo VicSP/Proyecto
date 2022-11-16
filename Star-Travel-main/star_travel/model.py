@@ -90,7 +90,9 @@ def aStarSearch(initLocation): # Función que inicia la Busqueda utilizando el a
                 bestPath.reverse()
                 print("La trayectoria optima es: {}".format(bestPath))
                 print("El costo total es: "+str(gDistance["Bucharest"])+ " km")
-                return bestPath
+                r=[bestPath,str(gDistance["Bucharest"])+ " km"]
+                #print(r)
+                return r
             openList.remove(location)
             closedList.append(location)
         
